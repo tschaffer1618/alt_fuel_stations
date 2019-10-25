@@ -9,7 +9,7 @@ class SearchController < ApplicationController
     }
 
     oauth_response = Faraday.get('https://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json', parameters)
-    json_response = JSON.pars(oauth_response.body)
+    json_response = JSON.parse(oauth_response.body)
     json_station = json_response["fuel_stations"].first
     @station = Station.new(json_station)
   end
