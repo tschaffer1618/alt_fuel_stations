@@ -1,12 +1,16 @@
 <center>
-  <h1><%= @station.station_name %></h1>
-  <p><%= @station.street_address %>, <%= @station.city %>, <%= @station.state %> <%= @station.zip %></p>
-  <p>Hours of Service: <%= @station.access_days_time %></p>
-  <p>Distance: <%= @station.distance %> mi</p>
-  <p>Fuel Type: <%= @station.fuel_type_code %></p>
+  <section class="station-info">
+    <h1><%= @station.station_name %></h1>
+    <p><%= @station.street_address %>, <%= @station.city %>, <%= @station.state %> <%= @station.zip %></p>
+    <p>Hours of Service: <%= @station.access_days_time %></p>
+    <p>Distance: <%= @station.distance %> mi</p>
+    <p>Fuel Type: <%= @station.fuel_type_code %></p>
+  </section>
   <br>
-  <h1>Direction Details</h1>
-  <p>Distance: <%= @route.distance %></p>
-  <p>Time: <%= @route.duration %></p>
-  <p>Steps: <%= @route.html_instructions %></p>
+  <section class="route-info">
+    <h1>Direction Details</h1>
+    <p>Distance: <%= @route.distance %></p>
+    <p>Time: <%= @route.duration %></p>
+    <p>Steps: <%= @route.html_instructions %></p>
+  </section>
 </center>
