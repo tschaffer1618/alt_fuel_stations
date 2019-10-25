@@ -1,5 +1,7 @@
 class SearchController < ApplicationController
   def index
+    # service = NrelService.new
+    # oauth_response = service.get_nearest_station(params[:location])
     parameters = {
       api_key: ENV['NREL_API_KEY'],
       location: params[:location],

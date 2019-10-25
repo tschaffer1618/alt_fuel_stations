@@ -34,6 +34,6 @@ describe 'A user' do
 
     expect(current_path).to eq search_path
 
-    expect
+    
   end
 end
