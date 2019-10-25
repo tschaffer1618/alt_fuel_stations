@@ -33,5 +33,7 @@ describe 'A user' do
     click_button 'Find Nearest Station'
 
     expect(current_path).to eq search_path
+
+    expect
   end
 end
