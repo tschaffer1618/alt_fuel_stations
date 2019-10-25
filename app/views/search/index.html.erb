@@ -4,4 +4,9 @@
   <p>Hours of Service: <%= @station.access_days_time %></p>
   <p>Distance: <%= @station.distance %> mi</p>
   <p>Fuel Type: <%= @station.fuel_type_code %></p>
+  <br>
+  <h1>Direction Details</h1>
+  <p>Distance: <%= @route.distance %></p>
+  <p>Time: <%= @route.duration %></p>
+  <p>Steps: <%= @route.html_instructions %></p>
 </center>

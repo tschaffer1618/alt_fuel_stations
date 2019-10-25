@@ -22,7 +22,6 @@ class SearchController < ApplicationController
     google_oauth_response = Faraday.get('https://maps.googleapis.com/maps/api/directions/json', google_parameters)
     google_json_response =  JSON.parse(google_oauth_response.body)
     json_route = google_json_response["routes"].first["legs"].first["steps"].first
-    @route = Route.new(json_route)
-    
+    @route = Route.new(json_route)  
   end
 end
