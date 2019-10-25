@@ -15,7 +15,4 @@ class SearchFacade
     json_route = google_json_response["routes"].first["legs"].first["steps"].first
     Route.new(json_route)
   end
-
-
-
 end
