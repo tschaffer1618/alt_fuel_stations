@@ -1,1 +1,7 @@
-Stuff Goes Here
+<center>
+  <h1><%= @station.station_name %></h1>
+  <p><%= @station.street_address %>, <%= @station.city %>, <%= @station.state %> <%= @station.zip %></p>
+  <p>Hours of Service: <%= @station.access_days_time %></p>
+  <p>Distance: <%= @station.distance %> mi</p>
+  <p>Fuel Type: <%= @station.fuel_type_code %></p>
+</center>

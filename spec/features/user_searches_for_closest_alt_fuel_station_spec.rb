@@ -34,6 +34,10 @@ describe 'A user' do
 
     expect(current_path).to eq search_path
 
-    
+    expect(page).to have_content("Seventeenth Street Plaza")
+    expect(page).to have_content("1225 17th St., Denver, CO 80202")
+    expect(page).to have_content("Hours of Service: MO: Not Specified; TU: Not Specified; WE: Not Specified; TH: Not Specified; FR: Not Specified; SA: Not Specified; SU: Not Specified")
+    expect(page).to have_content("Distance: 0.0934 mi")
+    expect(page).to have_content("Fuel Type: ELEC")
   end
 end
